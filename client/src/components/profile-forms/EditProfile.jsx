@@ -48,7 +48,8 @@ const EditProfile = ({
       instagram:
         loading || !profile.social.instagram ? '' : profile.social.instagram
     })
-  }, [loading])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [loading, getCurrentProfile])
 
   const {
     company,
